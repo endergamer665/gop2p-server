@@ -21,7 +21,7 @@ func main() {
 
 	router.GET("/devs", qurDevs)
 	router.POST("/devs", regDev)
-	router.Run("localhost:8080")
+	router.Run(":8080")
 }
 
 func regDev(c *gin.Context) {
